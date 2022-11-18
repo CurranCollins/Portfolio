@@ -4,64 +4,212 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: lightblue;
 }
 
-header {
+main section h2 {
+    
+    top: 50px;
+    left: 0px;
+    width: 100px;
+    height: 90%
+}
+
+.header {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(155, 184, 29);
-    color: rgb(148, 23, 206);
+    background-image: url("../images/headerphoto.png");
+    color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     font-size: 35px;
     justify-content: space-between;
+    height: 250px;
 }
 
-header nav {
+main p {
+  font-size: 20px;  
+}
+
+.header nav {
     padding-top: 50px;
     margin-right: 10px;   
 }
 
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+.header nav ul li {
+    display: inline;
+    margin: 10px;
+    font-weight: lighter;
+    border-bottom: 2px whitesmoke;
+    font-size: 20px;
+    color: whitesmoke;
+
+}
+
+.navlink {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color:blueviolet;
+}
+
+.seclabels {
+    display: block;
+    margin: 20px 10px 30px 50px;
+    font-size: 25;
+    
+}
+
+.secborder {
+    border-left:4px solid black;
+    margin-left: 150px;
+    padding: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
 }
 
 .card {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     flex: 1 0 0;
     padding: 60px;
-    text-align: center;
-    border-style:solid;
+    text-align: center; 
     min-width: 400px;
-    max-width: 700px;
+    max-width: 100%;*/
+    position: relative;
+    text-align: center;
+    color: blueviolet;
     
 }
 
-.card img {
+
+/*.card img {
     width: 100%;
-    min-width: 400px;
-    max-width: 700px;
-}
+}*/
 
 .subcard {
-    display: flex;
+    /*display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex: 1 0 0;
-    padding: 75px;
+    /*flex: 1 0 0;*/
+    /*padding: 75px;
+    border-style:none;
+    width: 100%;*/
+    position: relative;
     text-align: center;
-    border-style:solid;
-    min-width: 200px;
-    max-width: 400px;
-    
+    color: blueviolet;
+}
+
+/*.subcard h3 {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .subcard img {
-    width: 50%;
-    min-width: 200px;
-    max-width: 400px;
+    width: 100%;
+    
+}*/
+
+footer h4 {
+    margin: 20px 10px 10px 50px;
+    font-size: 25px;
 }
 
+footer ul li {
+    display: inline;
+    margin: 10px;
+    font-weight: lighter;
+    border-bottom: 2px whitesmoke;
+    font-size: 20px;
+    color: black;
+    margin-left: 50px;
+
+}
+
+.mainp {
+    margin-left: 250px;
+}
+
+
+.subp {
+    padding: 50px;
+}
+
+#leftcards {
+    margin-left: 300px;
+}
+
+.title {
+    position:absolute;
+    bottom: 10px;
+    left: 300px;
+}
+
+.subtitle {
+    position:absolute;
+    bottom: 100px;
+    left: 400px;
+    background-color: white;
+    padding: 8px;
+}
+
+.subsubtitle {
+    position:absolute;
+    bottom: 100px;
+    left: 100px;
+    background-color: white;
+    padding: 8px; 
+}
+
+.card:hover img {
+    opacity: 1.0;
+    color: blueviolet;
+}
+
+.card img, .subcard img {
+    transition: .5s ease;
+    opacity: 0.4;
+    backface-visibility: hidden;
+}
+
+.subcard:hover img {
+    opacity: 1.0;
+    color: blueviolet;
+}
+
+.header img {
+    position:absolute;
+    left:600px;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    .subcard {
+        width: 25%;
+    }
+     
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    .subcard {
+        width: 50%
+    }
+    
+  }
+
+  @media screen and (max-width: 576px) {
+    .card {
+      width: 100%;
+    }
+    .subcard {
+        width: 50%;
+    }
+  }
